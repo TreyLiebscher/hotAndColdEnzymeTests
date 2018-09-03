@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: E5Q7deQHUBnfGZhn7hQ7ONgx1/oQVuPLAdQot9JCWbcg6q38NnfFdK3mhiiPuXxh9UZsE/w+PN/zGT2B1UvYsCLpF++PdLPrXF/lFCcJpmuZqDAJ+MLlCL0Axkp1omvPSTnpXtKGn5/AKe0WlJTRikqJiMiu5TH3FiMLVA2+vfRLp8aGqQfQSAWP8gPGRu+9NBQLqT489AGYN4uSXyJh9XITkZ6xuRsP/LofJ+6rYY1AAAmQDl9BTAz3BdO9Ck7paMXTG4Fh2R/UxCvh7FZDUve37ttiar5yC6SAMuWtcVMUTNTgn9FrCVI4H33E9D0GwWgf5FlUSkbhY3JCoWCaN9BrtRTNXbdyz4nEG2wzP6Wl5gIw+N4TsPRX6gqdhUCo7lbRo/KOTBlXDxKWO4dSX1f+Xbg8cMIl+PjxVvML/GM3jU+BpFCs5fV9pQBLKsD/EvXiQFJWxLVqpaSfNnjvo+Xl3iGyyvUOISOvo3XVUpr8ATjGCUG0U0XyKiI8UOupEl+86uiNC/9Wx7POR7hbJ6PZha8gZ3rWUYc9rJs1b0udqXy9j8srDoi8dg4mRMR9DKrgcyrJsBvs+uR/5DJU0cEt/pCtqOnZkwRFGX1gWQ3w2OyN7x4hu5waYM7LdUCELPPnpzmYeIe+Mks4bTNxyHAraQouRnP6WoIIY/A/oI0=
+  app: radiant-earth-55873
+  on:
+    repo: TreyLiebscher/hotAndColdEnzymeTests
